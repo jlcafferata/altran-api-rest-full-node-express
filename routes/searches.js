@@ -8,11 +8,9 @@ const 	express 	= require('express'),
 		config		= require('../config'),
 		auth 		= require('../middlewares/auth');
 
-fetch.Promise 	= require('bluebird');
-	
-	
+fetch.Promise 	= require('bluebird');	
 
-function filterUsers(req, res){
+function users(req, res){
 	let filterBy=req.params.filterBy;
     let filterValue=req.params.filterValue;
     let found={};
@@ -45,7 +43,7 @@ function filterUsers(req, res){
 }
 
 
-function filterPolicies(req, res){
+function policies(req, res){
 	let filterBy=req.params.filterBy;
     let filterValue=req.params.filterValue;
 	let found={};
@@ -77,11 +75,7 @@ function filterPolicies(req, res){
 	 });
 }
 
-//routes
-
-router.get('/users/:filterBy/:filterValue', filterUsers);
-
-router.get('/policies/:filterBy/:filterValue', filterPolicies);
-
+router.get('/users/:filterBy/:filterValue', users);
+router.get('/policies/:filterBy/:filterValue', policies);
 
 module.exports = router;

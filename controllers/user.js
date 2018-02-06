@@ -12,7 +12,6 @@ function signIn(req, res){
 	let name=req.body.userName;
 	let email=req.body.email;
 	
-	console.log(name + '-' + email);
 	fetchRoutes(config.clients)
 	 .then((res) => {
 	  	return res.json();
@@ -29,7 +28,7 @@ function signIn(req, res){
 	  	}
 	  })
 	 .catch(error => {
-          console.log('login():Error Stack: ' + error.stack);
+          return res.status(401).send({message: error});
      });
 }
 

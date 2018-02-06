@@ -8,7 +8,6 @@ function login(req, res) {
 	 userController.signIn(req, res);
 }
 
-//routes
 router.get('/', (req, res) => { 
 	res.render('index.ejs');
 });
@@ -25,7 +24,6 @@ router.get('/register', (req, res) => {
 });
 
 router.post('/login', login);
-
 
 
 module.exports = router;
