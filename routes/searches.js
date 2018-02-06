@@ -57,8 +57,8 @@ function policies(req, res){
 		  	auth.isAuth(req, res, ['admin'], function(request, response){
 			  	if(filterBy && filterValue){
 					found=_.find(_.toArray(json)[0], function(policy){
-			  			if(filterBy==='name'){
-			  				return policy.name === filterValue;	
+			  			if(filterBy==='clientId'){
+			  				return policy.clientId === filterValue;	
 			  			} else if(filterBy==='number'){
 			  				return policy.id === filterValue;	
 			  			}		  			
