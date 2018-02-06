@@ -12,4 +12,4 @@ Benefits of the api:
 The api has the following functionalities:
 - Access control, through access to remote url.
 - Token creation once the user has validated.
-- User queries (through id or name) or policies (through id or policy number), accessing remote urls to feed data. Access to information is restricted to the role of the logged in user (token information).
+- User queries (through id or name) or policies (through client id or policy number), accessing remote urls to feed data. Access to information is restricted to the role of the logged in user (token information).
