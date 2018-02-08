@@ -39,7 +39,7 @@ app.use(morgan('combined'));
 app.use(access);
 app.use('/private', searches);
 app.get('*', (req, res) => {
-	res.send('route not found');
+	res.status(404).send('route not found');
 });
 
 app.listen(3000, function(){

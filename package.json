@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test":  "mocha --timeout 10000"  
   },
   "keywords": [],
   "author": "",
@@ -22,5 +22,14 @@
     "morgan": "^1.9.0",
     "node-fetch": "^1.7.3",
     "underscore-node": "^0.1.2"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "*",
+    "request": "^2.83.0",
+    "should": "^13.2.1",
+    "supertest": "^3.0.0"
   }
 }
