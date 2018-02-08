@@ -16,4 +16,4 @@ The api has the following functionalities:
 
 Unit testing:
 - Testing using Mocha, Chai, Should y Supertest 
-- The way to implement unit test, you need to invoque: npm test from command line 
+- The way to implement unit test, you need to invoque: "npm test" from command line 
