@@ -13,3 +13,7 @@ The api has the following functionalities:
 - Access control, through access to remote url.
 - Token creation once the user has validated.
 - User queries (through id or name) or policies (through client id or policy number), accessing remote urls to feed data. Access to information is restricted to the role of the logged in user (token information).
+
+Unit testing:
+- Testing using Mocha, Chai, Should y Supertest 
+- The way to implement unit test, you need to invoque: npm test from command line 
